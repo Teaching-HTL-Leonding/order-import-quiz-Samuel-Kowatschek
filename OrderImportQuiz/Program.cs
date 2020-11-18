@@ -26,9 +26,6 @@ namespace OrderImportQuiz
                 String[] orders = await File.ReadAllLinesAsync(args[2]);
 
             }
-            
-
-
         }
 
     }
@@ -64,7 +61,7 @@ namespace OrderImportQuiz
     {
         public int Id { get; set; }
 
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
         public int CustomerId { get; set; }
         
         public DateTime OrderDate { get; set; }
